@@ -14,3 +14,38 @@ Você será responsável por escolher qual técnica irá atender os seguintes re
 - Criar fluxograma com todos os requisitos que devem ser atendidos pelo sistema.
 */
 
+//sistema de cadastro de evento
+
+//variáveis && entrada
+let data = 21;
+let diadoevento = 31;
+let idade = 27;
+let idademinima = 18;
+let listadeparticipantes = ["Martha", "Thomas", "Bruce", "Alfred", "Dick", "Todd", "Tim", "Barbara", "Damian", "Thalia", "Cassandra", "Cassie", "Selina", "Katherine", "Stephanie", "Duke", "Lucius", "Harley", "Pamela", "Gordon"]
+
+//processamento && saída
+if (diadoevento >= data){
+    console.log("Evento marcado!")
+}
+else{
+    console.log("Data inválida. Por favor insira uma nova data.")
+}
+
+do
+{
+    if (listadeparticipantes.lenght >= 100){
+        console.log(`${listadeparticipantes.length} - Lista de participantes cheia, impossível cadastrar participante.`)
+    }
+    else{
+        console.log(`${listadeparticipantes.length} - Você ainda pode se cadastrar.`)
+    }
+} while (listadeparticipantes.lenght < 100)
+
+
+if (idade >= idademinima){
+    console.log("Participante cadastrado!")
+}
+else{
+    console.log("Participante não cadastrado. A idade mínima para este evento é de 18 anos.")
+
+}
